@@ -3,42 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flextone</title>
     <link rel="stylesheet" href="tailwind.css" />
   </head>
-  <body class="bg-[url('/images/ui.png')]">
+  <body class="bg-[url('/images/ui.png')] bg-no-repeat">
     <!-- ------------------------------top mac bar------------------------------------ -->
-    <div class="bg-gray-400 float-right   mx-56 my-16 flex p-5 rounded-full  ">
-      <div class=" flex">
-        <input
-          type="search" 
-          placeholder="Google it"
-        
-          class="border border-gray-300 rounded-full py-2 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm w-64 px-2"
-          />
-      </div>
 
-      <!-- --------------------------------------ICONS------------------------------------ -->
-      <div class="flex">
-        <img class="size-10 mx-2 fill-white" src="/Images/icns/wifi.png">
-        <img class="size-10 mx-2" src="/Images/icns/bell.png">
-        <img class="size-12 mx-2 rotate-90" src="/Images/icns/full-baterry.png">
-      </div>
+     <div class="MASTERTTP w-full   ">
+                  <div class="CONTAINS-SEARCH+ICONS+PROFILE flex justify-end border border-yellow-700  ">
+
+                  <div class="bg-gray-400 my-16 flex p-5 rounded-full align-middle ">
+                              <!-- --------------------------------------search------------------------------------ -->
+                              <div class=" search flex">
+                                <input
+                                type="search" 
+                                placeholder="Google it"
+                                class="border border-gray-300 rounded-full py-2  pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm w-64 px-2"
+                                />
+                              </div>
+                      
+                              <!-- --------------------------------------ICONS------------------------------------ -->
+                              <div class="flex align-middle ">
+                                <img class="size-10 mx-2 fill-white" src="/Images/icns/wifi.png">
+                                <img class="size-10 mx-2" src="/Images/icns/bell.png">
+                                <img class="size-10 mx-2" src="/Images/icns/full-baterry.png">
+                                <h3 class="text-2xl text-white text-bold text-wrap">100 %</h3>
+                              </div>
+                              
+                    </div> 
+                  
+                    <!-- ---------------------------------------Account-settings ---------------------------------------- -->
+                    <div class="ml-8 mr-14 -my-3">
+                      <img class=" float-end  size-28 border-4 border-gray-400 rounded-full  my-16 " src="/Images/icns/profile.jpg"> 
+                    </div>
+                  
+                </div>
+            
+              </div>
+                    <!-- -------------------------------------------end f MaCcy--------------------------------------------- -->
+                  
+        <!-- ----------------------------------Upside Div--------------------------------------- -->
+              <div class="UPPERleftside flex w-full border border-red-600">
+                          <!-- ----------------------------------CLOCK--------------------------------------- -->
+                          <div class="clock-component bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl shadow-2xl p-8 w-80 sm:w-96 transition-all duration-300 ease-in-out  mx-9" >
+                            <div class="clock-face relative w-64 h-64 mx-auto rounded-full bg-white bg-opacity-30 shadow-inner" aria-label="Clock Face">
+                                <div class="clock-center absolute top-1/2 left-1/2 w-4 h-4 -mt-2 -ml-2 bg-black rounded-full z-10"></div>
+                                <div id="hour-hand" class="hand hour absolute top-1/2 left-1/2 w-1 h-20 -mt-20 origin-bottom bg-black rounded-full transform -translate-x-1/2 rotate-0 transition-transform duration-1000 ease-in-out" aria-label="Hour Hand"></div>
+                                <div id="minute-hand" class="hand minute absolute top-1/2 left-1/2 w-1 h-28 -mt-28 origin-bottom bg-black rounded-full transform -translate-x-1/2 rotate-0 transition-transform duration-1000 ease-in-out" aria-label="Minute Hand"></div>
+                                <div id="second-hand" class="hand second absolute top-1/2 left-1/2 w-0.5 h-32 -mt-32 origin-bottom bg-red-500 rounded-full transform -translate-x-1/2 rotate-0 transition-transform duration-300 ease-in-out" aria-label="Second Hand"></div>
+                                <div class="numbers">
+                                    <div class="number number-12 absolute top-2 left-1/2 -translate-x-1/2 text-2xl font-bold">12</div>
+                                    <div class="number number-3 absolute right-2 top-1/2 -translate-y-1/2 text-2xl font-bold">3</div>
+                                    <div class="number number-6 absolute bottom-2 left-1/2 -translate-x-1/2 text-2xl font-bold">6</div>
+                                    <div class="number number-9 absolute left-2 top-1/2 -translate-y-1/2 text-2xl font-bold">9</div>
+                                </div>
+                            </div>
+                            <div class="mt-8 text-center">
+                                <div id="digital-time" class="text-4xl font-bold text-white mb-4" aria-live="polite">00:00:00</div>
+                                <button id="toggle-format" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50" aria-label="Toggle Time Format">Toggle 12/24 Hour</button>
+                            </div>
+                            <div class="mt-4 text-center">
+                                <label for="timezone-select" class="text-white font-semibold mr-2">Timezone:</label>
+                                <select id="timezone-select" class="bg-white bg-opacity-20 text-white rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+                                    <option value="local">Local Time</option>
+                                    <option value="UTC">UTC</option>
+                                    <option value="EST">EST</option>
+                                    <option value="PST">PST</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <!-- ------------------------------------------------------------------------------------------------------ -->
+                <div class="CENTERNE border border-gray-950 ">
+                      <div class="UPPPP bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl shadow-2xl p-16  flex border border-green-600 " >
+                            <div class="space-x-5 text-white text-4xl p-9">
+                              TODO - LIST
+                            </div>
+                                  <div class="todolist  space-y-5 ">
+                                    <div class="flex  space-x-2">
+                                      <input type="checkbox">
+                                      <input type="text">
+                                    </div>
+                                    <div class="flex  space-x-2">
+                                      <input type="checkbox">
+                                      <input type="text">
+                                    </div>
+                                    <div class="flex space-x-2">
+                                      <input type="checkbox">
+                                      <input type="text">
+                                    </div>
+                                    
+                                  </div>
+                      </div>
+                  <div class="centerdown">
+                    
+                      
+                    <div class="centerdownright">
+                        
+                      </div>
+                  </div>
+                </div>
+                <div class="rightside">
+                  
+                </div>
+                
+              
+
+              </div>
+              <!-- ----------------------------------downside Div--------------------------------------- -->
+              <div class="downside">
+
+              </div>
       
-    </div> 
-    <img class=" size-24 border-4 border-gray-400 rounded-full mx-56 my-16 " src="/Images/icns/profile.jpg"> 
-
-<!-- ---------------------------------------Account-settings ---------------------------------------- -->
+      
     
 
 
-    <!-- ----------------------------------down menu--------------------------------------- -->
-    
 
-    <div class="MEGA2">
-      <div class="semimega1">d</div>
-      <div class="semimega2">e</div>
-      <div class="semimega3">f</div>
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
