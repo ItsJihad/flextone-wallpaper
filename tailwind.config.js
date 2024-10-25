@@ -2,7 +2,11 @@
 module.exports = {
   content: ['*'],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        'ww3': '470px', 
+      },
+    },
     zIndex: {
       '100': '100',
     }

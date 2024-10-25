@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flextone</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="/raw.css">
+
   </head>
-  <body class="bg-[url('/images/ui.png')] bg-no-repeat">
+  <body class="bg-[url('/images/2bg.webp')] bg-cover bg-center bg-no-repeat h-screen bg-opacity-20 backdrop-blur-md">
     <!-- ------------------------------top mac bar------------------------------------ -->
 
-     <div class="MASTERTTP w-full">
-                  <div class="CONTAINS-SEARCH+ICONS+PROFILE flex justify-end border border-yellow-700  ">
+     <div class="MACCYMENU w-full">
+                  <div class="CONTAINS-SEARCH+ICONS+PROFILE flex justify-end   ">
 
-                  <div class="bg-gray-400 my-16 flex p-5 rounded-full align-middle ">
+                  <div class="bg-white bg-opacity-20 backdrop-blur-lg my-16 flex p-5 rounded-full align-middle ">
                               <!-- --------------------------------------search------------------------------------ -->
                               <div class=" search flex">
                                 <input
@@ -26,15 +28,16 @@
                               <div class="flex align-middle ">
                                 <img class="size-10 mx-2 fill-white" src="/Images/icns/wifi.png">
                                 <img class="size-10 mx-2" src="/Images/icns/bell.png">
+                                <img class="size-10 mx-2" src="/Images/icns/bluetooth.png">
                                 <img class="size-10 mx-2" src="/Images/icns/full-baterry.png">
-                                <h3 class="text-2xl text-white text-bold text-wrap">100 %</h3>
+                                
                               </div>
                               
                     </div> 
                   
                     <!-- ---------------------------------------Account-settings ---------------------------------------- -->
                     <div class="ml-8 mr-14 -my-3">
-                      <img class=" float-end  size-28 border-4 border-gray-400 rounded-full  my-16 " src="/Images/icns/profile.jpg"> 
+                      <img class=" float-end  size-28 border-4 bg-transparent bg-opacity-20 backdrop-blur-lg rounded-full  my-16 " src="/Images/icns/dp.jpg"> 
                     </div>
                   
                 </div>
@@ -42,101 +45,71 @@
               </div>
                     <!-- -------------------------------------------end f MaCcy--------------------------------------------- -->
                   
-        <!-- ----------------------------------Upside Div--------------------------------------- -->
-              <div class="UPPERleftside flex w-full border border-red-600">
+<!-- ----------------------------------Upside Div--------------------------------------- -->
+              <div class="UPPERleftside flex w-full">
                           <!-- ----------------------------------CLOCK--------------------------------------- -->
-                          <div class="clock-component bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl shadow-2xl p-8 w-80 sm:w-96 transition-all duration-300 ease-in-out  mx-9" >
-                            <div class="clock-face relative w-64 h-64 mx-auto rounded-full bg-white bg-opacity-30 shadow-inner" aria-label="Clock Face">
-                                <div class="clock-center absolute top-1/2 left-1/2 w-4 h-4 -mt-2 -ml-2 bg-black rounded-full z-10"></div>
-                                <div id="hour-hand" class="hand hour absolute top-1/2 left-1/2 w-1 h-20 -mt-20 origin-bottom bg-black rounded-full transform -translate-x-1/2 rotate-0 transition-transform duration-1000 ease-in-out" aria-label="Hour Hand"></div>
-                                <div id="minute-hand" class="hand minute absolute top-1/2 left-1/2 w-1 h-28 -mt-28 origin-bottom bg-black rounded-full transform -translate-x-1/2 rotate-0 transition-transform duration-1000 ease-in-out" aria-label="Minute Hand"></div>
-                                <div id="second-hand" class="hand second absolute top-1/2 left-1/2 w-0.5 h-32 -mt-32 origin-bottom bg-red-500 rounded-full transform -translate-x-1/2 rotate-0 transition-transform duration-300 ease-in-out" aria-label="Second Hand"></div>
-                                <div class="numbers">
-                                    <div class="number number-12 absolute top-2 left-1/2 -translate-x-1/2 text-2xl font-bold">12</div>
-                                    <div class="number number-3 absolute right-2 top-1/2 -translate-y-1/2 text-2xl font-bold">3</div>
-                                    <div class="number number-6 absolute bottom-2 left-1/2 -translate-x-1/2 text-2xl font-bold">6</div>
-                                    <div class="number number-9 absolute left-2 top-1/2 -translate-y-1/2 text-2xl font-bold">9</div>
+                          <div class=" bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl shadow-2xl p-10 w-80   mx-9 ml-16" >
+                            
+                                <div class="clockb bg-black h-60 w-60 rounded-full items-center justify-center flex-row flex-end">
+                                  <div class="hours" style="--n:1">|</div>
+                                  <div class="hours" style="--n:2">|</div>
+                                  <div class="hours" style="--n:3">|</div>
+                                  <div class="hours" style="--n:4">|</div>
+                                  <div class="hours" style="--n:5">|</div>
+                                  <div class="hours" style="--n:6">|</div>
+                                  <div class="hours" style="--n:7">|</div>
+                                  <div class="hours" style="--n:8">|</div>
+                                  <div class="hours" style="--n:9">|</div>
+                                  <div class="hours" style="--n:10">|</div>
+                                  <div class="hours" style="--n:11">|</div>
+                                  <div class="hours" style="--n:12">|</div>
+                                  <div class="hour-hand bg-aliceblue w-[5px] h-[130px] absolute left-1/2 bottom-1/2 rounded-full" id="hour-id"></div>
+                                  <div class="minute-hand bg-aliceblue w-[5px] h-[130px] absolute left-1/2 bottom-1/2 rounded-full" id="minute-id"></div>
+                                  <!-- <div class="second-hand bg-aliceblue w-[5px] h-[130px] absolute left-1/2 bottom-1/2 rounded-full" id="second-id"></div> -->
+                                  <!-- <div class="point absolute w-[15px] h-[15px] bg-aliceblue rounded-full"></div> -->
                                 </div>
+                               
+                         </div> 
+                         <!-- ------------------------------------------------------------------------------------------------------ -->
+              <div class="CENTERNE  ">
+                     <div class="UPPPP bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl shadow-2xl  p-9 flex  align-middle" >
+                             <div class="pr-8  flex items-center justify-center ">
+                              <p class=" text-black text-3xl font-extrabold  "> TODO - LIST </p>
                             </div>
-                            <div class="mt-8 text-center">
-                                <div id="digital-time" class="text-4xl font-bold text-white mb-4" aria-live="polite">00:00:00</div>
-                                <button id="toggle-format" class="bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-semibold py-2 px-4 rounded-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50" aria-label="Toggle Time Format">Toggle 12/24 Hour</button>
+                            <!-- ---------------------------------------- -->
+                            <div class="todolist  space-y-5 ">
+                              <div class="flex rounded-full space-x-2">
+                                <img class="size-10 rounded-full" src="/Images/icns/tick.png" >
+                                <input class="pr-96 rounded-2xl border border-gray-800/55" type="text">
+                                <img class="size-10 rounded-full " src="/Images/icns/cross.png" >
+                              </div>
+                              <div class="flex rounded-full space-x-2">
+                                <img class="size-10 rounded-full" src="/Images/icns/tick.png" >
+                                <input class="  pr-96 rounded-2xl border border-gray-800/55" type="text">
+                                <img class="size-10 rounded-full" src="/Images/icns/cross.png" >
+                              </div>
+                              <div class="flex rounded-full space-x-2">
+                                <img class="size-10 rounded-full" src="/Images/icns/tick.png" >
+                                <input class="pr-96 rounded-2xl border border-gray-800/55" type="text">
+                                <img class="size-10 rounded-full" src="/Images/icns/cross.png" >
+                              </div>
+                              
                             </div>
-                            <div class="mt-4 text-center">
-                                <label for="timezone-select" class="text-white font-semibold mr-2">Timezone:</label>
-                                <select id="timezone-select" class="bg-black bg-opacity-20 text-white rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
-                                    <option value="local">Local Time</option>
-                                    <option value="UTC">UTC</option>
-                                    <option value="EST">EST</option>
-                                    <option value="PST">PST</option>
-                                </select>
-                            </div>
-                        </div> 
-                        <!-- ------------------------------------------------------------------------------------------------------ -->
-                <div class="CENTERNE border border-gray-950 ">
-                      <div class="UPPPP bg-white bg-opacity-20 backdrop-blur-lg rounded-3xl shadow-2xl  p-9 flex border border-green-600  align-middle" >
-                            <div class="   pr-8 ">
-                              <p class=" text-center text-white text-4xl my-10 md:max-lg:flex"> TODO - LIST </p>
-                            </div>
-                                  <div class="todolist  space-y-5 ">
-                                    <div class="flex rounded-full space-x-2">
-                                      <input class=" size-10 rounded-full" type="checkbox">
-                                      <input class="pr-96 rounded border border-gray-800/55" type="text">
-                                    </div>
-                                    <div class="flex rounded-full space-x-2">
-                                      <input class=" size-10 rounded-full" type="checkbox">
-                                      <input class="pr-96 rounded border border-gray-800/55" type="text">
-                                    </div>
-                                    <div class="flex rounded-full space-x-2">
-                                      <input class=" size-10 rounded-full" type="checkbox">
-                                      <input class="pr-96 rounded border border-gray-800/55" type="text">
-                                    </div>
-                                    
-                                      
-                                    
-                                      
-                                    
-                                  </div>
-                      </div>
-                  <div class="centerdown ">
-                    
-                      
-                    <div class="centerdownright">
-                        
-                      </div>
-                  </div>
+                        </div>
+                          
+                </div> 
+              <!-- -------------------------------------------------------------- APPS SECTION ------------------------------------------------  -->
+                <div class="rightAPPS  bg-white bg-opacity-20 backdrop-blur-lg  h-72 w-ww3 ml-9 rounded-xl flex justify-center">
+                  <p class=" text-black text-mb font-extrabold mt-3 opacity-50 "> APPS </p>
+
                 </div>
-                <div class="rightside">
-                  
-                </div>
-                
               
-
+              
+              
+              
+              
               </div>
-              <!-- ----------------------------------downside Div--------------------------------------- -->
-              <div class="downside w-full border border-fuchsia-600">
-
-              </div>
-      
-      
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
               <script src="/script.js"></script>
