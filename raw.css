@@ -24,7 +24,7 @@
     right: 55%;
     
 }
-.hour-hand ,.minute-hand,.second-hand{
+.hour-hand ,.minute-hand,.secondH{
     --rotate:0;
     position: absolute;
     left: 50%;
@@ -41,13 +41,24 @@
 
 .minute-hand{
     width: 3px;
-    height: 55px;
+    height: 50px;
     background-color:aliceblue;
 }
 .second-hand{
     width: 3px;
     height: 40px;
-    background-color:aliceblue;
+    top: 50px;
+    background-color:rgb(153, 0, 0);
+}
+
+.secondH{
+    transform: rotate(calc(30deg * var(--n)));
+    position: absolute;
+    text-align: center;
+    color: rgb(109, 6, 6);
+    inset: 60px;
+    font-size: 20px;
+    border-radius: 700px;
 }
 
 .time-text {
