@@ -1,5 +1,3 @@
-
-
 const hourHand = document.getElementById('hour-id');
 const minuteHand = document.getElementById('minute-id');
 const secondHand = document.getElementById('second-id');

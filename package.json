@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build":"vite build"
   },
   "keywords": [],
   "author": "",
